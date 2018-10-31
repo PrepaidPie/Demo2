@@ -1,0 +1,86 @@
+/* CSS Google Font  */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+/* CSS Google Font end  */
+
+body, html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+header {
+    background-image: url(/images/header_bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+#header-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "lo hl sb"
+        "hc hc hi";
+}
+
+.logo {
+    background: rgb(193, 0, 2);
+    text-align: center;
+    color: #ffffff;
+    width: 110px;
+    grid-area: lo;
+}
+
+#header-links {
+    grid-area: hl;
+}
+
+#header-links ul {
+    list-style-type: none;
+}
+
+header li {
+    display: inline;
+}
+
+header a {
+    color: rgb(91, 51, 121);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#sign-up-button {
+    grid-area: sb;
+}
+
+#sign-up-button ul {
+    list-style-type: none;
+}
+
+#header-content-text {
+    grid-area: hc;
+}
+
+#header-img {
+    grid-area: hi;
+}
+
+.play-button {
+    background-color: rgb(47, 38, 147); /* Green */
+    border: dotted;
+    color: #fff;
+    padding: 12px 12px;
+    text-align: center;
+    display: inline;
+    border-radius: 100%;
+}
+
+.play-button:hover {
+    background-color: purple;
+}
